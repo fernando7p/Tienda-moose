@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>Pagina de noticia de tecnologia</title>
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <header>
+    <h1>Tienda moose</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">inicio</a></li>
+        <li><a href="carrito.html">carrito</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="productos.html">productos</a></li>
+      </ul>
+    </nav>
+    <section class="busqueda">
+      <input type="text" id="buscador"
+        placeholder="buscar producto🔍..."
+        oninput="filtrarproducto()"/>
+    </section>
+  </header>
+  <main>
+    <form>
+ <label for="nombre">Nombre:</label>
+  <input type="text" id="nombre" required />
+   <label for="mensaje">Mensaje:</label>
+      <!--Textarea para mensajes largos-->
+    <textarea id="mensaje" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </main>
+   <footer>
+    <p>&copy; 2025 Mi tienda</p>
+     </footer>
+
+  
+  

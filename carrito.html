@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>Pagina de noticia de tecnologia</title>
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <header>
+    <h1>Tienda moose</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">inicio</a></li>
+        <li><a href="carrito.html">carrito</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="productos.html">productos</a></li>
+      </ul>
+    </nav>
+    <section class="busqueda">
+      <input type="text" id="buscador"
+        placeholder="buscar producto🔍..."
+        oninput="filtrarproducto()"/>
+    </section>
+  </header>
+  <main>
+    <section-class="carrito-lista">
+      <h2>..Tu carrito de compra</h2>
+      <ul id="Lista-carrito"></ul>
+      <p id="Total-carrito" class="Total">Total:$0.00</p>
+      <button id="btn-confirmar" class="btn-confirmar">✅Confirmar compra</button>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Mi tienda</p>
+     </footer>
+  <script src="js/main.js"></script>
+</footer>
+</body>
+  

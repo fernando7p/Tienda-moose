@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>Pagina de noticia de tecnologia</title>
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <header>
+    <h1>Tienda moose</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">inicio</a></li>
+        <li><a href="carrito.html">carrito</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="productos.html">productos</a></li>
+      </ul>
+    </nav>
+    <section class="busqueda">
+      <input type="text" id="buscador"
+        placeholder="buscar producto🔍..."
+        oninput="filtrarproducto()"/>
+    </section>
+  </header>
+  <main>
+  <h2>Bienvenidos a la tienda mooos en linea</h2>
+  <p>Encuentra los mejores productos al mejor precio</p>
+  <section class="ofertas"></section>
+  <h2>🥳🤩Ofertas del dia</h2>
+  <div class="productos"></div>
+    <center>
+  <figure class="producto">
+    <img src="Imagenes/Tarola.jpeg" alt="Tarola yamaha">
+    <figcaption>
+      <h3>Tarola yamaha sbs1455dbs azul</h3>
+      <p class="descripcion">Tarola de metal con regilla</p>
+      <p class="precio de oferta"><del>$4,000</del> $3,000</p>
+      <p class="rating">⭐⭐⭐⭐⭐</p>
+      <button onclick="agregar al carrito('Tarola yamaha',$3,000)">
+        Agregar al carrito</button>
+    </figcaption>
+  </figure>
+<figure class="producto">
+    <img src="Imagenes/Imgbateria.jpeg" alt="Tarola yamaha">
+    <figcaption>
+      <h3>BATERIA MAPEX CM5295FTCIB AZUL</h3>
+      <p class="descripcion">Bateria azul completa metal/rock</p>
+      <p class="precio de oferta"><del>$20,000</del> $15,000</p>
+      <p class="rating">⭐⭐⭐⭐⭐</p>
+      <button onclick="agregar al carrito('Tarola yamaha',$3,000)">
+        Agregar al carrito</button>
+    </figcaption>
+  </figure>
+    <figure class="producto">
+    <img src="Imagenes/Platillos.jpeg" alt="Tarola yamaha">
+    <figcaption>
+      <h3>Set de Platillos S390 ZILDJIAN</h3>
+      <p class="descripcion">platillos de lo mejor en bateria</p>
+      <p class="precio de oferta"><del>$30,000</del> $15,000</p>
+      <p class="rating">⭐⭐⭐⭐⭐</p>
+      <button onclick="agregar al carrito('Tarola yamaha',$3,000)">
+        Agregar al carrito</button>
+    </figcaption>
+  </figure>
+    <figure class="producto">
+    <img src="Imagenes/Pedal.jpeg" alt="Tarola yamaha">
+    <figcaption>
+      <h3>Doble pedale de Batería COBRA</h3>
+      <p class="descripcion">doble pedal con doble cadena mejor golpe</p>
+      <p class="precio de oferta"><del>$10,000</del> $4,000</p>
+      <p class="rating">⭐⭐⭐⭐⭐</p>
+      <button onclick="agregar al carrito('Tarola yamaha',$3,000)">
+        Agregar al carrito</button>
+    </figcaption>
+  </figure>
+    <figure class="producto">
+    <img src="Imagenes/Atril.jpeg" alt="Tarola yamaha">
+    <figcaption>
+      <h3>Atril para Hit Hat de Batería Drum Workshop de acero</h3>
+      <p class="descripcion">lo mejor en atriles DW</p>
+      <p class="precio de oferta"><del>$3,000</del> $2,500</p>
+      <p class="rating">⭐⭐⭐⭐⭐</p>
+      <button onclick="agregar al carrito('Tarola yamaha',$3,000)">
+        Agregar al carrito</button>
+    </figcaption>
+  </figure>
+    <figure class="producto">
+    <img src="Imagenes/Banco.jpeg" alt="Tarola yamaha">
+    <figcaption>
+      <h3>Banco Yamaha Para Bateria Ds550</h3>
+      <p class="descripcion">Para mas horas de practica</p>
+      <p class="precio de oferta"><del>$2,000</del> $1,000</p>
+      <p class="rating">⭐⭐⭐⭐⭐</p>
+      <button onclick="agregar al carrito('Tarola yamaha',$3,000)">
+        Agregar al carrito</button>
+    </figcaption>
+  </figure>
+    <figure class="producto">
+    <img src="Imagenes/Baquetas.jpeg" alt="Tarola yamaha">
+    <figcaption>
+      <h3>YDGAKN Baquetas para Tambor 3 Pares, Baquetas 5A Profesionales, Baquetas para Bateria</h3>
+      <p class="descripcion">5A baquetas metaleras</p>
+      <p class="precio de oferta"><del>$800</del> $500</p>
+      <p class="rating">⭐⭐⭐⭐⭐</p>
+      <button onclick="agregar al carrito('Tarola yamaha',$3,000)">
+        Agregar al carrito</button>
+    </figcaption>
+  </figure>
+    <figure class="producto">
+    <img src="Imagenes/Baquetero.jpeg" alt="Tarola yamaha">
+    <figcaption>
+      <h3>Baquetero MEINL MSB-1</h3>
+      <p class="descripcion">no mas perdidas de baquetas</p>
+      <p class="precio de oferta"><del>$1,000</del> $500</p>
+      <p class="rating">⭐⭐⭐⭐⭐</p>
+      <button onclick="agregar al carrito('Tarola yamaha',$3,000)">
+        Agregar al carrito</button>
+    </figcaption>
+  </figure>
+    <figure class="producto">
+    <img src="Imagenes/Bateria.jpeg" alt="Tarola yamaha">
+    <figcaption>
+      <h3>BATERIA ACUSTICA YAMAHA STAGE CUSTOM 7 PIEZA SCB2FS7CR</h3>
+      <p class="descripcion">Lo mejor en baterias SIN PLATILLOS NI ATRILES</p>
+      <p class="precio de oferta"><del>$40,000</del> $28,000</p>
+      <p class="rating">⭐⭐⭐⭐⭐</p>
+      <button onclick="agregar al carrito('Tarola yamaha',$3,000)">
+        Agregar al carrito</button>
+    </figcaption>
+  </figure>
+    <figure class="producto">
+    <img src="Imagenes/Cencerro.jpg" alt="Tarola yamaha">
+    <figcaption>
+      <h3>Cencerros juego de batería</h3>
+      <p class="descripcion">para todo tipo de ocacion y eventos</p>
+      <p class="precio de oferta"><del>$6,000</del> $2,000</p>
+      <p class="rating">⭐⭐⭐⭐⭐</p>
+      <button onclick="agregar al carrito('Tarola yamaha',$3,000)">
+        Agregar al carrito</button>
+    </figcaption>
+  </figure>
+    </center>
+    </html>
+    
